@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Azizurrahman Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/about-me.png">
+    <link rel="shortcut icon" type="image/png" href="images/about-me.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  margin-top: 5px;
+}
+
+/* Fix background image coverage */
+.hero .slider-item .img {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Fix about/profile image display */
+.about-mf .about-img img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  border-radius: 8px;
+}
+
+.img-about.img {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Fix project images */
+.block-20 {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  height: 270px !important;
+  display: block !important;
+}
+
+/* Ensure hero background covers properly */
+.hero {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.ftco-section.ftco-hireme.img {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Video Section Styling - Responsive & Environment Friendly */
+.video-section {
+  padding: 80px 0;
+  background: #000;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+}
+
+.video-section h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/* Responsive Video Sizing */
+@media (max-width: 768px) {
+  .video-section {
+    padding: 40px 15px;
+  }
+
+  .video-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .video-container {
+    border-radius: 10px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-section h2 {
+    font-size: 24px;
+  }
+
+  .video-section p {
+    font-size: 14px !important;
+  }
+}
+
+/* Video Loading Indicator */
+.video-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 1;
+}
+
+.video-container.loaded::before {
+  display: none;
+}
+
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/03334758130?text=Hi%20Azizurrahman!%20I%20would%20like%20to%20discuss%20social%20media%20management%20for%20my%20event." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <span class="icon-whatsapp whatsapp-icon"></span>
+  </a>
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Azizurrahman</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png); background-size: cover; background-position: center center; min-height: 600px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Azizurrahman</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Social Media Manager  ',
+						'Content Creator  ',
+						'Digital Marketing Expert   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Professional Social Media Manager & Content Creator</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://wa.me/03334758130" class="btn btn-primary py-3 px-4">WhatsApp Me</a>
+							<a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My Projects</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Azizurrahman</span></p>
+										<p><span class="title-s">Role: </span> <span>Social Media Manager & Content Creator</span></p>
+										<p><span class="title-s">Experience: </span> <span>Professional Event & Brand Management</span></p>
+										<p><span class="title-s">Address: </span> <span>Al Ain, UAE</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Social Media Management</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Content Creation & Strategy</span> <span class="pull-right">92%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Graphic Design & Video Editing</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>TikTok & Instagram Marketing</span> <span class="pull-right">93%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Event & Brand Promotion</span> <span class="pull-right">88%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>Creative and results-driven Social Media Manager specializing in event promotion, brand storytelling, and digital engagement.
+									Expert in crafting compelling content for Instagram, TikTok, Facebook, and other platforms to drive audience growth and brand awareness.
+									Proven track record in managing social media campaigns for events, birthday parties, restaurants, and businesses with exceptional engagement rates.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Social Media Manager &amp; Content Creator</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Events, Parties, Restaurants &amp; Brand Management</span></li>
+									<li class="d-flex"><span>Education:</span> <span>BS Computer Science - Agriculture University Peshawar</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Urdu, Pashto</span></li>
+									<li class="d-flex"><span>Certifications:</span> <span>TikTok Advertising, Graphic Design (DigiSkills), Video Editing &amp; Vlogging</span></li>
+									<li class="d-flex"><span>Core Skills:</span> <span>Instagram Reels, TikTok Videos, Event Coverage, Party Promotion</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Social Media Trends, Content Creation, Event Photography, Digital Marketing</span></li>
+
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="15">0</span> <span>+</span>
+									<span>&nbsp; Certifications achieved</span>
+								</p>
+								<p><a href="https://wa.me/03334758130" class="btn btn-primary py-3 px-3">WhatsApp Me</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Professional Social Media Manager with expertise in event promotion, party coverage, and brand engagement. Skilled in creating viral content, managing multiple social media platforms, and executing successful digital marketing campaigns for events and businesses.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June - September 2025</span>
+						<h2>Social Media Manager</h2>
+						<span class="position">Kabir's Restaurant, Peshawar</span>
+						<p class="mt-4">Leading social media strategy and content creation for Kabir's Restaurant with focus on event coverage and customer engagement.
+							<ul>
+								<li>Managed all social media platforms (Instagram, TikTok, Facebook) creating daily engaging content that increased followers by 200%.</li>
+								<li>Covered and promoted special events, birthday parties, and celebrations at the restaurant with professional photography and videography.</li>
+								<li>Created viral reels and TikTok videos showcasing menu items, events, and customer experiences reaching 100K+ views.</li>
+								<li>Executed targeted TikTok and Instagram advertising campaigns resulting in 40% increase in event bookings.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024</span>
+						<h2>Technical Intern</h2>
+						<span class="position">Code Alpha & Teckhwa</span>
+						<p class="mt-4">Completed valuable internships with leading tech companies, gaining hands-on experience in software development and IT operations.
+							<ul>
+								<li>Worked on real-world projects at Code Alpha, developing technical skills in programming and problem-solving.</li>
+								<li>Gained practical experience at Teckhwa, working with modern development tools and methodologies.</li>
+								<li>Worked as Computer Operator at Mr. Book Shop, Board Bazar Peshawar, handling daily technical operations.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2025</span>
+    					<h2>BS Computer Science</h2>
+    					<span class="position">Agriculture University Peshawar</span>
+    					<p class="mt-4">GPA: 3.01 - Focusing on networking, cybersecurity, and software development.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Professional Certifications</span>
+    					<h2>Industry Certifications</h2>
+    					<span class="position">Multiple Platforms</span>
+    					<p class="mt-4">CCNA (Corvit & KPSDP), Cloud Computing (NAVTTC), Cybersecurity, NEBOSH, Graphic Design (DigiSkills), Video Editing, Microsoft Office, TikTok Advertising, and more.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Showcasing successful social media campaigns for events, birthday parties, and brand promotions.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">Restaurant Event Marketing - Kabir's Restaurant Peshawar Pakistan</a></h3>
+                <p>Complete social media management for Kabir's Restaurant events, birthday party bookings, and special celebrations. Created engaging content that boosted event bookings by 40% and social media following by 200%.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">Wedding & Event Promotion Campaign</a></h3>
+                <p>Managed social media promotion for large-scale wedding events and celebrations, creating cinematic reels, event teasers, and viral content that reached 100K+ viewers and increased venue inquiries by 60%.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">Birthday Party Social Media Coverage </a></h3>
+                <p> Complete social media management for luxury birthday parties including pre-event promotion, live coverage, Instagram Stories, TikTok videos, and post-event highlights generating 50K+ engagement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	  </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section class="video-section ftco-animate" id="video-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-12 text-center">
+            <h2>See My Work</h2>
+            <p style="color: #999; font-size: 18px;">Watch my social media content creation and event coverage in action</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="video-container" id="videoContainer">
+              <video
+                id="portfolioVideo"
+                muted
+                loop
+                playsinline
+                controls
+                preload="metadata"
+                poster="images/bg_1.png">
+                <source src="video/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p style="color: #666; text-align: center; margin-top: 20px; font-size: 14px;">
+              💡 Video optimized for your device | Auto-pauses when not in view to save power
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="50">0</strong>
+                <span>Events Covered</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="100">0</strong>
+                <span>K+ Engagement</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="200">0</strong>
+                <span>% Growth Rate</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="25">0</strong>
+                <span>Happy Clients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>Let's Promote Your<span> Event  </span> </h2>
+						<div class="heading"> <h4> I specialize in creating viral content for events, parties, and celebrations that engage audiences and drive bookings </h4>
+						<br>
+						<p><a href="https://wa.me/03334758130" class="btn btn-primary py-3 px-5">WhatsApp Me</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p><i>Al Ain, UAE</i></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">WhatsApp</h3>
+	            <p><a href="https://wa.me/03334758130">03334758130</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:azizmarwat2004@gmail.com">azizmarwat2004@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="C:\Users\mudda\Downloads\Portfolio-Website-Template-main\Portfolio-Website-Template-main\AZIZURRAHMAN CV (1) (1).pdf">Download CV</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Need Event<span> Coverage?  </span> <a href="https://wa.me/03334758130" class="btn btn-primary py-3 px-5">WhatsApp Me</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Connect with me  </li>
+					  <li class="ftco-animate"><a href="https://wa.me/03334758130" title="WhatsApp"><span class="icon-whatsapp"></span></a></li>
+					  <li class="ftco-animate"><a href="mailto:azizmarwat2004@gmail.com" title="Email"><span class="icon-envelope"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.instagram.com/" title="Instagram"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.tiktok.com/" title="TikTok"><span class="icon-video-camera"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+			  <p style="color: #999;">Azizurrahman - Professional Social Media Manager</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+
+  <!-- Environment-Friendly Video Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const video = document.getElementById('portfolioVideo');
+      const videoContainer = document.getElementById('videoContainer');
+
+      if (!video) return;
+
+      // Device Detection for optimal settings
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      const isLowPowerMode = navigator.connection?.saveData || false;
+
+      // Optimize video quality based on device
+      if (isMobile || isLowPowerMode) {
+        video.preload = 'none'; // Save bandwidth on mobile
+      }
+
+      // Intersection Observer for Environment-Friendly Playback
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5 // Video must be 50% visible
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Video is visible - play it
+            video.play().catch(err => {
+              console.log('Autoplay prevented:', err);
+            });
+          } else {
+            // Video is not visible - pause to save power
+            video.pause();
+          }
+        });
+      }, observerOptions);
+
+      // Start observing the video
+      observer.observe(video);
+
+      // Add loaded class when video can play
+      video.addEventListener('loadeddata', function() {
+        videoContainer.classList.add('loaded');
+      });
+
+      // Pause video when page is hidden (tab switched)
+      document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+          video.pause();
+        }
+      });
+
+      // Reduce playback rate on battery power (optional)
+      if ('getBattery' in navigator) {
+        navigator.getBattery().then(function(battery) {
+          if (!battery.charging && battery.level < 0.2) {
+            video.playbackRate = 0.75; // Slow down to save power
+          }
+        });
+      }
+
+      // Network-aware loading
+      if ('connection' in navigator) {
+        const connection = navigator.connection;
+
+        // On slow connection, don't autoplay
+        if (connection.effectiveType === '2g' || connection.effectiveType === 'slow-2g') {
+          video.preload = 'none';
+          video.removeAttribute('autoplay');
+        }
+
+        // Listen for connection changes
+        connection.addEventListener('change', function() {
+          if (connection.effectiveType === '4g') {
+            video.preload = 'metadata';
+          }
+        });
+      }
+    });
+  </script>
+
+  </body>
+</html>
